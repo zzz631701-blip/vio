@@ -184,7 +184,19 @@ padding:6px 12px;   /* ارتفاع و فراغ داخلي */
   background: rgba(0,0,0,0.15);
 }
 
+/* اللابتوب (شاشات كبيرة) */
+.container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 منتجات بالصف */
+  gap: 20px;
+}
 
+/* التابلت */
+@media (max-width: 1024px) {
+  .container {
+    grid-template-columns: repeat(2, 1fr); /* صفين */
+  }
+}
 
 /* الشاشات الصغيرة (الموبايل) */
 @media (max-width: 768px) {
@@ -277,7 +289,7 @@ const products = [
   ];
 
 const instaLink = "https://www.instagram.com/vio.store.iraq?igsh=OHJhOXM3ZGtydWk=";
-const whatsappNumber = "9647710913140"; 
+const whatsappNumber = "9647700000000"; 
 
 const container = document.getElementById('products');
 products.forEach(p => {
