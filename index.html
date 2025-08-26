@@ -186,9 +186,12 @@ padding:6px 12px;   /* ارتفاع و فراغ داخلي */
 
 
 
+/* الشاشات الصغيرة (الموبايل) */
 @media (max-width: 768px) {
   .container {
-    grid-template-columns: 1fr; /* بس عمود واحد */
+    display: grid;
+    grid-template-columns: 1fr;  /* عمود واحد */
+    gap: 15px; /* مسافة بين المنتجات */
   }
 }
 @media (max-width: 600px) {
